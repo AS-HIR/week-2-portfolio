@@ -1,0 +1,375 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+body{
+  background-color:white;
+}
+
+#navbar{
+  background-color:black;
+}
+#logo{
+  font-size: 30px;
+  color: #F3FDE8;
+  font-weight: bold;
+}
+#logo span{
+  color: #FFC436;
+  font-size: 40px;
+}
+.navbar-toggler span{
+ color:#FAF0E6;
+ font-size: 30px;
+}
+.navbar-nav{
+  margin-left: 30px;
+}
+.nav-item .nav-link{
+  font-size: 16px;
+  font-weight: 550;
+  color: #F3FDE8;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+.nav-item .nav-link:hover{
+  background: #FFC436;
+  color: black;
+}
+/*home page start*/
+
+.Home{
+  background: url(images/bg-img.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+  color: #fff;
+}
+.home-content p{
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.home-sci>a{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 10px;
+  color: #FFC436;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 15px 30px 0;
+}
+.home-sci>a:hover{
+  background: #FFC436;
+  color: black;
+  box-shadow: 0 0 20px #FFC436;
+}
+.btn-box{
+  padding: 12px 20px;
+  background: #FFC436;
+  border-radius: 40px;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-box:hover{
+  box-shadow: 0 0 20px #FFC436,
+  0 0 25px #FFC436;
+  color: black;
+}
+.main-img img{
+  max-height: 80vh;
+  max-width: 60vh;
+  object-fit: cover;
+  box-shadow: 0 0 20px black;
+  margin-bottom: 10%;
+  margin-left: 5%;
+ }
+
+
+/*home page ends*/
+ /*MEDIA QUERIES*/
+ @media screen and (max-width:766px) {
+  .main-img img{
+    max-height: 60vh;
+  }
+  .home-content h1,.home-content h3,.home-content p{
+    color: black;
+  }
+  .home-sci>a{
+    color: black;
+  }
+  .home-sci>a:hover{
+    background: black;
+    color: #FFC436;
+    box-shadow: 0 0 20px black;
+  }
+  .btn-box:hover{
+    box-shadow: 0 0 20px black,
+    0 0 25px black;
+    color: black;
+  }
+
+  .about-text h2{
+    font-size: 30px;
+    margin-top: 0%;
+  }
+  .about-text p{
+    font-size: 25px;
+  }
+  .img-2 img{
+    display: none;
+  }
+  #about{
+    max-height: auto;
+  }
+ }
+ @media screen and (max-width:600px) {
+  
+  .about-text h2 {
+    font-size: 25px;
+    margin-top: 0%;
+  }
+  .about-text p{
+    font-size: 15px;
+  }
+ }
+
+
+
+ /*MEDIA QUERIES END */
+#about{
+  gap: 1.5rem;
+  color: #fff;
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(images/bg-img-5.avif);
+  background-size: cover;
+  background-position: center;
+  border-top: 2px black solid;
+  height: 100vh;
+}
+.about-text h2{
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.about-text h2 span{
+  color: #FFC436;
+  text-decoration: overline;
+}
+.about-text h4{
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin: 15px 0 30px;
+}
+.about-text p{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+  color:white;
+}
+.img-2 img{
+  max-height: 70vh;
+  box-shadow: 0 0 20px black;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+
+/*-------------------------------------------------*/
+#services{
+  background: url(images/bg-img-8.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+.main-txt h1{
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+  color: black;
+  text-decoration:overline;
+}
+.services .card{
+    border-radius: 5px;
+    border: 1px black solid;
+    box-shadow:  0px 4px 20px #ffa500;
+    margin-top: 50px;
+    
+    background-color: #FFC436;
+}
+.services .card img{
+    border-radius: 5px;
+}
+.services .card .card-body{
+    background: transparent;
+}
+.services .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.services .card .card-body p{
+    font-size: 15px;
+}
+/*-------------------------*/
+
+#skills{
+  background: url(images/bg-img-9.webp);
+  background-size: cover;
+  background-position: center;
+}
+#arrange img{
+  height: 40px;
+}
+#arrange{
+  display: grid;
+  grid-template-columns: 1fr ;
+  row-gap: 20px;
+
+}
+.main-txt-1{
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0px 1px 1px black;
+}
+.main-txt-1 span{
+  color: #FFC436;
+  text-decoration: overline;
+}
+.skill-img img{
+  height: 60vh;
+  width: 70%;
+  margin:10%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+
+
+/*---------------------*/
+#projects{
+  background: url(images/bg-img-10.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main-txt-1{
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0px 1px 1px black;
+}
+.main-txt-1 span{
+  color: #FFC436;
+  text-decoration: overline;
+}
+.projects .card{
+  border-radius: 5px;
+  border: 1px black solid;
+  box-shadow:  0px 4px 20px #ffa500;
+  margin-top: 50px;
+  
+  background-color: #FFC436;
+}
+.projects .card img{
+  border-radius: 5px;
+}
+.projects .card .card-body{
+  background: transparent;
+}
+.projects .card .card-body h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.projects .card .card-body p{
+  font-size: 15px;
+}
+/*---------------------------------footer*-------------------------------------*/
+
+#contact{
+  background: url(images/footer-img.avif);
+  background-size: cover;
+  background-position: center;
+
+}
+.contact-text h4{
+  font-size: 30px;
+  font-weight: bold;
+ 
+}
+.contact-text h6{
+  font-size: 15px;
+  font-weight: bold;
+ line-height: 20px;
+ padding-top: 20px;
+}
+.footer-sci>a{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 15px 30px 0;
+}
+.footer-sci>a:hover{
+  background: black;
+  color: white;
+  box-shadow: 0 0 20px black;
+}
+.fa-envelope,
+.fa-phone{
+  font-size: 20px;
+  color: black;
+}
+.mail-contact a{
+  margin-top: 25px;
+  padding-top: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+text-decoration: none;
+}
+.mail-contact a:hover{
+  color: white;
+}
+.btn-submit{
+  height: 100px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 550;
+  background: #ffa500;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.btn-submit:hover{
+  box-shadow: 0 0 30px black;
+}
